@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "Debug Batch",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/${relativeFile}",
+      "outFiles": ["${workspaceFolder}/dist/**/handler.js"],
+      "outputCapture": "std",
+      "sourceMaps": true,
+      "args": ["{\\\"param\\\": \\\"test\\\"}"] // バッチに渡されるパラメーターのリスト
+    }
+  ]
+}
