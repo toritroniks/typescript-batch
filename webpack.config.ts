@@ -2,7 +2,6 @@ import * as webpack from 'webpack';
 import * as path from 'path';
 import * as nodeExternals from 'webpack-node-externals';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
-import * as TerserPlugin from 'terser-webpack-plugin';
 import { getEntries } from '@libs/helpers/webpackHelper';
 
 const config: webpack.Configuration = {
@@ -48,11 +47,6 @@ const config: webpack.Configuration = {
   plugins: [
     new webpack.ProvidePlugin({
       $config: [path.resolve(path.join(__dirname, 'src/libs/config')), 'default'],
-    }),
-    new TerserPlugin({
-      terserOptions: {
-        sourceMap: true,
-      },
     }),
   ],
 };
