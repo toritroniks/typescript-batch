@@ -5,7 +5,7 @@ const { jobName } = getBaseInfo(__dirname);
 
 const jobConfig: JobConfig = {
   name: jobName,
-  command: `node "./jobs/${jobName}/handler.js"`,
+  command: `run ${jobName}`,
   memory: '512',
   vcpu: '0.25',
   retryAttempts: 1,
