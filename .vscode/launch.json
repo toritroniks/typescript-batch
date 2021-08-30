@@ -9,7 +9,7 @@
       "outFiles": ["${workspaceFolder}/dist/**/handler.js"],
       "outputCapture": "std",
       "sourceMaps": true,
-      "args": ["{\\\"param\\\": \\\"test\\\"}"] // バッチに渡されるパラメーターのリスト
+      "args": ["{\\\"param\\\": \\\"test\\\"}"] // the arguments passed to the batch job
     }
   ]
 }
